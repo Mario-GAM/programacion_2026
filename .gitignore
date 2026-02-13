@@ -1,12 +1,1 @@
-# Archivos del sistema macOS
-.DS_Store
-
-# Carpetas de compilación y ejecutables
-output/
-*.o
-*.out
-*.exe
-*.dSYM/
-
-# Archivos temporales
-*.tmp
+.vscode/
