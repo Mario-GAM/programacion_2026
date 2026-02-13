@@ -2,7 +2,7 @@
 
 1.- Define clase
 
-1.1.- Es un dato que tu diseñas para agrupar datos (tambien llamada atributos) y funciones (tambien llamda métodos).
+1.1.- Es un dato que tu diseñas para agrupar datos (tambien llamada atributos) y funciones (tambien llamada métodos).
 
 2.- Define encapsulamiento 
 
