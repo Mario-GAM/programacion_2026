@@ -2,7 +2,7 @@
 #include <string> // Librerías estándar.
 #include <iostream> // Librerías estándar.
 
-using namespace std;
+using namespace std; // Permite usar elementos de la librería estándar (como cout) sin escribir std::
 // Costructor con parametros
 celular::celular(string marca, string modelo, int codigo, float precio, bool estado) {
 
