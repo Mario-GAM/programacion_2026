@@ -14,7 +14,6 @@ class Gruas : Vehiculo {
     Gruas::Gruas()
 
     void actualizarCapacidad();
-    vi
 
 
 
