@@ -21,6 +21,9 @@ class Gruas : public Vehiculo {
     float obtenerCapacidad();
     std::string obtenerTipo();
 
+    //prueba
+
+
     
 };
 
