@@ -6,8 +6,8 @@ Gruas::Gruas (): Vehiculo(){
     capacidad_carga = 0.0 ;
     tipo_estabiizador = "";
  }
-Gruas::Gruas (std::string marca, std::string modelo, int anio, float capacidad_carga, std::string tipo_estabiizador)
- : Vehiculo(marca, modelo, anio) {
+Gruas::Gruas (std::string marca, std::string modelo, int anio,std::string placa, float capacidad_carga, std::string tipo_estabiizador)
+ : Vehiculo(marca, modelo, anio, placa) {
 
     this-> capacidad_carga =  capacidad_carga;
     this-> tipo_estabiizador =  tipo_estabiizador;

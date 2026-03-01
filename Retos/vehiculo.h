@@ -29,6 +29,8 @@ public:
     std::string obtenerModelo();
     int obtenerAnio();
     std::string obtenerPlaca();
+
+
 };
 
 #endif // VEHICULO_H

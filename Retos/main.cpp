@@ -1,19 +1,3 @@
-/*
- * Instrucciones de Compilación:
- *
- * Para compilar este programa, utiliza el siguiente comando:
- *
- *     g++ vehiculo.cpp coche.cpp main.cpp -o herencia
- *
- * O si prefieres usar la opción de estándar C++17:
- *
- *     g++ -std=c++17 vehiculo.cpp coche.cpp main.cpp -o herencia
- *
- * Para ejecutar el programa:
- *
- *     ./herencia
- */
-
 #include <iostream>
 #include "vehiculo.h"
 #include "coche.h"

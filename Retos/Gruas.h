@@ -3,7 +3,7 @@
 #include "vehiculo.h"
 #include <string>
 
-class Gruas : Vehiculo {
+class Gruas : public Vehiculo {
 
     private:
     float capacidad_carga;
@@ -12,7 +12,7 @@ class Gruas : Vehiculo {
     public:
 
     Gruas();
-    Gruas(std::string marca, std::string modelo, int anio, float capacidad_carga, std::string tipo_estabiizador);
+    Gruas(std::string marca, std::string modelo, int anio,std::string placa, float capacidad_carga, std::string tipo_estabiizador);
 
     void actualizarCapacidad(float capacidad_carga);
     void actualizarTipo(std::string tipo_estabilizador);

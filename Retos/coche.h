@@ -11,7 +11,7 @@ private:
 public:
     // Constructores
     Coche();
-    Coche(std::string marca, std::string modelo, int anio, int numeroPuertas);
+    Coche(std::string marca, std::string modelo, int anio,std::string placa, int numeroPuertas);
 
     // Métodos para actualizar
     void actualizarNumeroPuertas(int nuevoNumero);
