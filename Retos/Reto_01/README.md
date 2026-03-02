@@ -4,7 +4,7 @@
 
 # Nombre de los integrantes:
 
-Talan Alejandro Mares Vera
+Thalan Alejandro Mares Vera
 
 Antonio ku Canu
 
