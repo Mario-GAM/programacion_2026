@@ -9,18 +9,15 @@ private:
     int numeroPuertas;
 
 public:
-    // Constructores
+    
     Coche();
     Coche(std::string marca, std::string modelo, int anio,std::string placa, int numeroPuertas);
 
-    // Métodos para actualizar
     void actualizarNumeroPuertas(int nuevoNumero);
 
-    // Sobrescritura del método de la clase base
     void mostrarInformacion();
 
-    // Getter
     int obtenerNumeroPuertas();
 };
 
-#endif // COCHE_H
+#endif 

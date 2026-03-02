@@ -1,5 +1,5 @@
-#ifndef GRUAS_H
-#define GRUAS_H
+#ifndef GRUA_H
+#define GRUA_H
 #include "vehiculo.h"
 #include <string>
 
@@ -20,14 +20,8 @@ class Gruas : public Vehiculo {
 
     float obtenerCapacidad();
     std::string obtenerTipo();
-
-    //prueba
-
-
-    
+  
 };
-
-
 
 
 #endif

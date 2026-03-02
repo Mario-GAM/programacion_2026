@@ -1,7 +1,7 @@
 #include "menu.h"
 #include "vehiculo.h"
 #include "coche.h"
-#include "gruas.h"
+#include "grua.h"
 #include <iostream>
 
 void ejecutaMenu()

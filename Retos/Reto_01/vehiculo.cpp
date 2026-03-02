@@ -1,7 +1,6 @@
 #include "vehiculo.h"
 #include <iostream>
 
-// Constructor por defecto
 Vehiculo::Vehiculo() {
     marca = "";
     modelo = "";
@@ -9,7 +8,6 @@ Vehiculo::Vehiculo() {
     placa = "";
 }
 
-// Constructor con parámetros
 Vehiculo::Vehiculo(std::string marca, std::string modelo, int anio, std::string placa) {
     this-> marca = marca;
     this-> modelo = modelo;
@@ -17,7 +15,6 @@ Vehiculo::Vehiculo(std::string marca, std::string modelo, int anio, std::string 
     this-> placa = placa;
 }
 
-// Métodos para actualizar
 void Vehiculo::actualizarMarca(std::string nuevaMarca) {
     marca = nuevaMarca;
 }
@@ -34,7 +31,6 @@ void Vehiculo::actualizarPlaca (std::string nuevaPlaca) {
     placa = nuevaPlaca;
 }
 
-// Método para mostrar
 void Vehiculo::mostrarInformacion() {
     std::cout << "Marca: " << marca << std::endl;
     std::cout << "Modelo: " << modelo << std::endl;
@@ -43,7 +39,6 @@ void Vehiculo::mostrarInformacion() {
 
 }
 
-// Getters
 std::string Vehiculo::obtenerMarca() {
     return marca;
 }
