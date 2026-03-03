@@ -7,8 +7,7 @@ Camion::Camion() : Vehiculo() {
 }
 
 // Constructor por defecto
-Camion::Camion(std::string marca, std::string modelo, int anio, std::string placa,
-           float maximo_de_peso, std::string capacidad_personas) 
+Camion::Camion (std::string marca, std::string modelo, int anio, std::string placa,float maximo_de_peso, int capacidad_personas) 
            : Vehiculo(marca, modelo, anio, placa) {
 
             this->maximo_de_peso = maximo_de_peso;
@@ -17,8 +16,15 @@ Camion::Camion(std::string marca, std::string modelo, int anio, std::string plac
 
 // Métodos para actualizar
 
-   void actualizarMaximoDePeso(float nuevoMaximoDePeso);
-    void actualizarCapacidadPersonas(std::string nuevaCapacidadPersonas);
+   void Camion::actualizarMaximoDePeso(float nuevoMaximoDePeso){
+
+    maximo_de_peso = nuevoMaximoDePeso;
+
+   }
+    void Camion::actualizarCapacidadPersonas(int nuevaCapacidadPersonas){
+
+        capacidad_personas = nuevaCapacidadPersonas;
+    }
 
 // Método para mostrar información
    void Camion::mostrarInformacion() {
@@ -30,8 +36,8 @@ Camion::Camion(std::string marca, std::string modelo, int anio, std::string plac
 // Getters
 float Camion::obtenerMaximoDePeso() {
     return maximo_de_peso;
-    
+}
 
 int Camion::obtenerCapacidadPersonas() {
-    return std::stoi(capacidad_personas);
+    return capacidad_personas;
 }

@@ -7,7 +7,7 @@ class Gruas : public Vehiculo {
 
     private:
     float capacidad_carga;
-    std::string tipo_estabiizador;
+    std::string tipo_estabilizador;
 
     public:
 

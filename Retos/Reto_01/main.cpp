@@ -4,47 +4,45 @@
 #include "grua.h"
 #include "camion.h"
 #include "moto.h"
+#include "menu.h"
 
+//Prof,  para compilar es esto |
+//                             v
+
+//g++ main.cpp menu.cpp vehiculo.cpp coche.cpp moto.cpp camion.cpp grua.cpp -o programa_vehiculos
+//./programa_vehiculos
 
 int main() {
-    std::cout << "=== Ejemplo de herencia: Vehiculo y Coche ===" << std::endl;
-    std::cout << std::endl;
+    Coche coche1("Toyota", "Corolla", 2022, "ABC-123", 4);
+    Moto moto1("Vento", "Screamer 300", 2024, "MOTO-456", 300);
+    Camion camion1("Volvo", "FH16", 2020, "TRUCK-789", 20.5, 2);
+    Gruas grua1("Freightliner", "M2", 2019, "TOW-000", 5.0, "Hidráulico");
 
-    Vehiculo vehiculo1("Ford", "F-150", 2019, "DLs13");
-    std::cout << "Vehículo 1 (clase base):" << std::endl;
-    vehiculo1.mostrarInformacion();
-    std::cout << std::endl;
+    std::cout << "_____Veiculos existentes_____" << std::endl;
 
-    Coche coche1;
-    std::cout << "Coche 1 (constructor por defecto):" << std::endl;
-    coche1.mostrarInformacion();
-    std::cout << std::endl;
+    std::cout << "_____Informacion de coche_____" << std::endl;
+    coche1. mostrarInformacion();
+    std::cout << "______________________________" << std::endl;
 
-    coche1.actualizarMarca("Toyota");
-    coche1.actualizarModelo("Corolla");
-    coche1.actualizarAnio(2022);
-    coche1.actualizarNumeroPuertas(4);
+    std::cout << "" << std::endl;
+    std::cout << "_____Informacion de moto_____" << std::endl;
+    moto1. mostrarInformacion();
+    std::cout << "______________________________" << std::endl;
 
-    std::cout << "Coche 1 después de actualizar:" << std::endl;
-    coche1.mostrarInformacion();
-    std::cout << std::endl;
+    std::cout << "" << std::endl;
+    std::cout << "_____Informacion de camion_____" << std::endl;
+    camion1. mostrarInformacion();
+    std::cout << "______________________________" << std::endl;
 
-    Gruas grua1;
-    Gruas vehiculo1("Honda", "Civic", 2020, 4);
-    std::cout << "Grua 1 (constructor con parámetros):" << std::endl;
-    grua1.mostrarInformacion();
-    std::cout << std::endl;
+    std::cout << "" << std::endl;
+    std::cout << "_____Informacion de grua_____" << std::endl;
+    grua1. mostrarInformacion();
+    std::cout << "______________________________" << std::endl;
 
-    std::cout << "Acceso a miembros heredados (Coche 2):" << std::endl;
-    std::cout << "  Marca (heredado): " << coche2.obtenerMarca() << std::endl;
-    std::cout << "  Modelo (heredado): " << coche2.obtenerModelo() << std::endl;
-    std::cout << "  Año (heredado): " << coche2.obtenerAnio() << std::endl;
-    std::cout << "  Puertas (propio): " << coche2.obtenerNumeroPuertas() << std::endl;
-    std::cout << std::endl;
+    std::cout << "_____Sistema de Gestion de Vehiculos_____" << std::endl;
 
-    coche2.actualizarNumeroPuertas(2);
-    std::cout << "Coche 2 después de cambiar a 2 puertas:" << std::endl;
-    coche2.mostrarInformacion();
+    ejecutaMenu(coche1, moto1, camion1, grua1);
 
     return 0;
 }
+
