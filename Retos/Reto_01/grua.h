@@ -12,7 +12,7 @@ class Gruas : public Vehiculo {
     public:
 
     Gruas();
-    Gruas(std::string marca, std::string modelo, int anio,std::string placa, float capacidad_carga, std::string tipo_estabiizador);
+    Gruas(std::string marca, std::string modelo, int anio,std::string placa, float capacidad_carga, std::string tipo_estabilizador);
 
     void actualizarCapacidad(float capacidad_carga);
     void actualizarTipo(std::string tipo_estabilizador);

@@ -110,12 +110,12 @@ int op ;
             std::cout << "______________________________" << std::endl;
 
             std::cout << "" << std::endl;
-            std::cout << "_____Informacion de moto_____" << std::endl;
+            std::cout << "_____Informacion de camion_____" << std::endl;
             camion1. mostrarInformacion();
             std::cout << "______________________________" << std::endl;
 
             std::cout << "" << std::endl;
-            std::cout << "_____Informacion de moto_____" << std::endl;
+            std::cout << "_____Informacion de grua_____" << std::endl;
             grua1. mostrarInformacion();
             std::cout << "______________________________" << std::endl;
 
