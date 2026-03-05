@@ -1,5 +1,5 @@
 # Nombre del equipo:
- Los detonadores
+ Los Detonadores
 
 
 # Nombre de los integrantes:
