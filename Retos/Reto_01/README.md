@@ -6,7 +6,7 @@
 
 Thalan Alejandro Mares Vera
 
-Antonio ku Canu
+Francisco Antonio Canul Ku 
 
 Mario Abraham Garcia Melo
 
