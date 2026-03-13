@@ -33,10 +33,12 @@ int op ;
     std::cout << "-----------------------------------------" << std::endl;
     std::cout << ": ";
     std::cin >> selec;
-    
-    std::cout << "Ingresa la nueva placa: ";
-    std::cin >> nuevaPlaca;
 
+    if(selec <= 4)
+{    
+    std::cout << "Ingresa la nueva placa:"<<std::endl ;
+    std::cin >> nuevaPlaca;
+}
     switch (selec)
     {
         case 1:  
@@ -79,7 +81,11 @@ int op ;
     std::cout << "_____________________________" << std::endl;
         break;
     
+    default: 
+    std::cout<< "Opccion no valida" << std::endl;
+    break;
     }
+    
         }
         else if (op == 2){
             std::cout << "Ingresa la nueva placa para el coche:" << std::endl;
@@ -119,6 +125,13 @@ int op ;
             grua1. mostrarInformacion();
             std::cout << "______________________________" << std::endl;
 
+
+        } else if (op == 3) {    
+        std::cout<< "Saliendo del programa"<<std::endl;
+
+        }
+        else{
+        std::cout<< "Opccion no valida"<<std::endl;
 
         }
         
