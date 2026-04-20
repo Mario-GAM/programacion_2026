@@ -8,6 +8,10 @@ void Conversacion::agregarMensaje(const Mensaje& msg) {
 
 void Conversacion::guardarEnArchivo(const std::string& ruta) const {
     std::ofstream archivo(ruta, std::ios::app);
+    if (!archivo.is_open()) {
+        return;
+    }
+
     for (const auto& msg : mensajes) {
         std::string fecha = std::ctime(&msg.FechaHora);
         if (!fecha.empty() && fecha.back() == '\n') {

@@ -7,6 +7,7 @@
 #include <cstdlib>
 #include <fstream>
 #include <iostream>
+#include <filesystem>
 #include <regex>
 #include <sstream>
 #include <stdexcept>
@@ -338,6 +339,7 @@ int main(int argc, char* argv[]) {
     try {
         configure_console_utf8();
         Conversacion conversacion;
+        std::filesystem::create_directories("src/output");
 
         const CliOptions options = parse_args(argc, argv);
         const Provider provider = resolve_provider(options);
@@ -373,8 +375,8 @@ int main(int argc, char* argv[]) {
         const std::string content = extract_content_field(response_json);
         const std::string assistant_text = content.empty() ? response_json : content;
 
-        conversacion.agregarMensaje(Mensaje(prompt, "usuario"));
-        conversacion.agregarMensaje(Mensaje(assistant_text, "ia"));
+        conversacion.agregarMensaje(Mensaje(prompt, "Usuario"));
+        conversacion.agregarMensaje(Mensaje(assistant_text, "Ia"));
         conversacion.guardarEnArchivo("src/output/historial_chat.txt");
 
         if (!content.empty()) {
