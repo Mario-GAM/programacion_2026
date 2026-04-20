@@ -1,7 +1,5 @@
 #include <curl/curl.h>
-
 #include "conversacion.h"
-
 #include <algorithm>
 #include <cctype>
 #include <cstdlib>
