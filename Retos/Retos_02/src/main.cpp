@@ -1,5 +1,7 @@
 #include <curl/curl.h>
 
+#include "conversacion.h"
+
 #include <algorithm>
 #include <cctype>
 #include <cstdlib>
@@ -8,7 +10,7 @@
 #include <regex>
 #include <sstream>
 #include <stdexcept>
-#include <string>
+#include <string>   
 
 #ifdef _WIN32
 #include <windows.h>
@@ -335,6 +337,7 @@ std::string request_chat_completion(
 int main(int argc, char* argv[]) {
     try {
         configure_console_utf8();
+        Conversacion conversacion;
 
         const CliOptions options = parse_args(argc, argv);
         const Provider provider = resolve_provider(options);
@@ -368,6 +371,12 @@ int main(int argc, char* argv[]) {
         curl_global_cleanup();
 
         const std::string content = extract_content_field(response_json);
+        const std::string assistant_text = content.empty() ? response_json : content;
+
+        conversacion.agregarMensaje(Mensaje(prompt, "usuario"));
+        conversacion.agregarMensaje(Mensaje(assistant_text, "ia"));
+        conversacion.guardarEnArchivo("src/output/historial_chat.txt");
+
         if (!content.empty()) {
             std::cout << "\nModel response:\n" << content << "\n";
         } else {
